@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="P6M-fs-Ozd">
+            <objects>
+                <viewController storyboardIdentifier="WeatherView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Syv-I0-0hx" customClass="WeatherViewController" customModule="OpenWeatherAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQL-XO-QnA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkR-rJ-jvA">
+                                <rect key="frame" x="161" y="322" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erh-ol-CHQ">
+                                <rect key="frame" x="161" y="430" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjF-XQ-rbV">
+                                <rect key="frame" x="96" y="691" width="200" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaU-SH-O9e">
+                                <rect key="frame" x="126" y="571" width="141" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="gSa-oD-JnK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ndi-c7-sAl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="天気を取得">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedFetchWeather:" destination="Syv-I0-0hx" eventType="touchUpInside" id="hF7-CA-RSq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vxc-s3-Zc0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bkR-rJ-jvA" firstAttribute="top" secondItem="Vxc-s3-Zc0" secondAttribute="top" constant="263" id="8m3-wq-B0r"/>
+                            <constraint firstItem="erh-ol-CHQ" firstAttribute="centerX" secondItem="bkR-rJ-jvA" secondAttribute="centerX" id="jBt-G4-0fy"/>
+                            <constraint firstItem="bkR-rJ-jvA" firstAttribute="centerX" secondItem="FQL-XO-QnA" secondAttribute="centerX" id="qZq-2B-mbi"/>
+                            <constraint firstItem="erh-ol-CHQ" firstAttribute="top" secondItem="bkR-rJ-jvA" secondAttribute="bottom" constant="72" id="xPm-0y-Wne"/>
+                            <constraint firstItem="IaU-SH-O9e" firstAttribute="top" secondItem="erh-ol-CHQ" secondAttribute="bottom" constant="105" id="xnm-PB-gYw"/>
+                            <constraint firstItem="erh-ol-CHQ" firstAttribute="centerX" secondItem="FQL-XO-QnA" secondAttribute="centerX" id="yWj-gb-gtc"/>
+                            <constraint firstItem="erh-ol-CHQ" firstAttribute="top" secondItem="bkR-rJ-jvA" secondAttribute="bottom" constant="72" id="yeN-fv-GMG"/>
+                            <constraint firstItem="IaU-SH-O9e" firstAttribute="centerX" secondItem="bkR-rJ-jvA" secondAttribute="centerX" id="z9F-kk-dNg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="SVc-CS-aAC"/>
+                    <connections>
+                        <outlet property="prefectureLabel" destination="erh-ol-CHQ" id="CeI-yN-ffv"/>
+                        <outlet property="weatherLabel" destination="bkR-rJ-jvA" id="Uhm-de-uAw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0V-pa-nbO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939.6946564885495" y="200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

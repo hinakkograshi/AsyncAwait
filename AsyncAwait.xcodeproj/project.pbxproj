@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53130F2F2B62917B00116262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53130F2E2B62917B00116262 /* AppDelegate.swift */; };
+		53130F312B62917B00116262 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53130F302B62917B00116262 /* SceneDelegate.swift */; };
+		53130F332B62917B00116262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53130F322B62917B00116262 /* ViewController.swift */; };
+		53130F362B62917B00116262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53130F342B62917B00116262 /* Main.storyboard */; };
+		53130F382B62917C00116262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53130F372B62917C00116262 /* Assets.xcassets */; };
+		53130F3B2B62917C00116262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53130F392B62917C00116262 /* LaunchScreen.storyboard */; };
+		536784002B649564002E602F /* PrefectureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536783FF2B649564002E602F /* PrefectureData.swift */; };
+		536784022B649971002E602F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536784012B649971002E602F /* WeatherViewController.swift */; };
+		536784042B6499FF002E602F /* WeatherView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536784032B6499FF002E602F /* WeatherView.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53130F2B2B62917B00116262 /* AsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53130F2E2B62917B00116262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53130F302B62917B00116262 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		53130F322B62917B00116262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53130F352B62917B00116262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53130F372B62917C00116262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53130F3A2B62917C00116262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53130F3C2B62917C00116262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536783FF2B649564002E602F /* PrefectureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureData.swift; sourceTree = "<group>"; };
+		536784012B649971002E602F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		536784032B6499FF002E602F /* WeatherView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherView.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53130F282B62917B00116262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53130F222B62917B00116262 = {
+			isa = PBXGroup;
+			children = (
+				53130F2D2B62917B00116262 /* AsyncAwait */,
+				53130F2C2B62917B00116262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53130F2C2B62917B00116262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53130F2B2B62917B00116262 /* AsyncAwait.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53130F2D2B62917B00116262 /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				53130F2E2B62917B00116262 /* AppDelegate.swift */,
+				53130F302B62917B00116262 /* SceneDelegate.swift */,
+				53130F322B62917B00116262 /* ViewController.swift */,
+				536783FF2B649564002E602F /* PrefectureData.swift */,
+				536784012B649971002E602F /* WeatherViewController.swift */,
+				53130F342B62917B00116262 /* Main.storyboard */,
+				536784032B6499FF002E602F /* WeatherView.storyboard */,
+				53130F372B62917C00116262 /* Assets.xcassets */,
+				53130F392B62917C00116262 /* LaunchScreen.storyboard */,
+				53130F3C2B62917C00116262 /* Info.plist */,
+			);
+			path = AsyncAwait;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53130F2A2B62917B00116262 /* AsyncAwait */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53130F3F2B62917C00116262 /* Build configuration list for PBXNativeTarget "AsyncAwait" */;
+			buildPhases = (
+				53130F272B62917B00116262 /* Sources */,
+				53130F282B62917B00116262 /* Frameworks */,
+				53130F292B62917B00116262 /* Resources */,
+				53130F422B6294A400116262 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsyncAwait;
+			productName = AsyncAwait;
+			productReference = 53130F2B2B62917B00116262 /* AsyncAwait.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53130F232B62917B00116262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					53130F2A2B62917B00116262 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 53130F262B62917B00116262 /* Build configuration list for PBXProject "AsyncAwait" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53130F222B62917B00116262;
+			productRefGroup = 53130F2C2B62917B00116262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53130F2A2B62917B00116262 /* AsyncAwait */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53130F292B62917B00116262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536784042B6499FF002E602F /* WeatherView.storyboard in Resources */,
+				53130F3B2B62917C00116262 /* LaunchScreen.storyboard in Resources */,
+				53130F382B62917C00116262 /* Assets.xcassets in Resources */,
+				53130F362B62917B00116262 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53130F422B6294A400116262 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SDKROOT=$(xcrun --sdk macosx --show-sdk-path)\nexport MINT_PATH=./.mint/lib\nexport MINT_LINK_PATH=./.mint/bin\n\n# M1 Mac\nif [ \"$(uname -m)\" = \"arm64\" ]; then\n  export HOMEBREW_HOME=/opt/homebrew\n# Intel Mac\nelse\n  export HOMEBREW_HOME=/usr/local\nfi\nif [ -d \"${HOMEBREW_HOME}\" ]; then\n  export PATH=\"${HOMEBREW_HOME}/bin:$PATH\"\nfi\n\nif which mint >/dev/null; then\n  mint run realm/SwiftLint swiftlint --fix --format\n  mint run realm/SwiftLint swiftlint\nelse\n  echo \"warning: Mint not installed, please run \\`brew install mint\\` .\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53130F272B62917B00116262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53130F332B62917B00116262 /* ViewController.swift in Sources */,
+				536784022B649971002E602F /* WeatherViewController.swift in Sources */,
+				53130F2F2B62917B00116262 /* AppDelegate.swift in Sources */,
+				536784002B649564002E602F /* PrefectureData.swift in Sources */,
+				53130F312B62917B00116262 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53130F342B62917B00116262 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53130F352B62917B00116262 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53130F392B62917C00116262 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53130F3A2B62917C00116262 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53130F3D2B62917C00116262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53130F3E2B62917C00116262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53130F402B62917C00116262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwait/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hinaf0224.AsyncAwait;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53130F412B62917C00116262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwait/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hinaf0224.AsyncAwait;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53130F262B62917B00116262 /* Build configuration list for PBXProject "AsyncAwait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53130F3D2B62917C00116262 /* Debug */,
+				53130F3E2B62917C00116262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53130F3F2B62917C00116262 /* Build configuration list for PBXNativeTarget "AsyncAwait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53130F402B62917C00116262 /* Debug */,
+				53130F412B62917C00116262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53130F232B62917B00116262 /* Project object */;
+}
