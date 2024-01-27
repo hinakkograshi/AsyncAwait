@@ -29,6 +29,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedPrefecture = PrefectureData().prefectureList[indexPath.row]
+        let storyboard = UIStoryboard(name: "WeatherView", bundle: nil)
+        let weatherVC = storyboard.instantiateViewController(withIdentifier: "WeatherView") as? WeatherViewController
+        weatherVC?.prefecrure = selectedPrefecture
+        // SwiftLint
+        navigationController?.pushViewController(weatherVC!, animated: true)
 
     }
 

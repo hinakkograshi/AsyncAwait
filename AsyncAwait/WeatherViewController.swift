@@ -8,22 +8,28 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+    var prefecrure = ""
 
+    @IBOutlet private weak var weatherLabel: UILabel!
+
+    @IBOutlet private weak var prefectureLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func tappedFetchWeatherButton(_ sender: UIButton) {
+        let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecrure)
+        APIClient().getWeatherFromAPI(
+            latitude: latitude,
+            longitude: longitude, success: { description, cityName in
+                DispatchQueue.main.async {
+                    self.weatherLabel.text = description
+                    self.prefectureLabel.text = cityName
+                }
+            }, failure: {
+                print("error")
+            }
+        )
     }
-    */
-
 }

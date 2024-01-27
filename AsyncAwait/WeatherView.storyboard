@@ -11,7 +11,7 @@
         <!--Title-->
         <scene sceneID="P6M-fs-Ozd">
             <objects>
-                <viewController storyboardIdentifier="WeatherView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Syv-I0-0hx" customClass="WeatherViewController" customModule="OpenWeatherAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Syv-I0-0hx" customClass="WeatherViewController" customModule="AsyncAwait" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQL-XO-QnA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tappedFetchWeather:" destination="Syv-I0-0hx" eventType="touchUpInside" id="hF7-CA-RSq"/>
+                                    <action selector="tappedFetchWeatherButton:" destination="Syv-I0-0hx" eventType="touchUpInside" id="T64-X4-g9Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,13 +67,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="SVc-CS-aAC"/>
                     <connections>
-                        <outlet property="prefectureLabel" destination="erh-ol-CHQ" id="CeI-yN-ffv"/>
-                        <outlet property="weatherLabel" destination="bkR-rJ-jvA" id="Uhm-de-uAw"/>
+                        <outlet property="prefectureLabel" destination="erh-ol-CHQ" id="8mn-zJ-EEf"/>
+                        <outlet property="weatherLabel" destination="bkR-rJ-jvA" id="EoE-05-EZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0V-pa-nbO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.6946564885495" y="200"/>
+            <point key="canvasLocation" x="2048" y="199"/>
         </scene>
     </scenes>
     <resources>
