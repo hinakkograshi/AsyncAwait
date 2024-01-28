@@ -19,17 +19,23 @@ class WeatherViewController: UIViewController {
     }
 
     @IBAction private func tappedFetchWeatherButton(_ sender: UIButton) {
-        let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecrure)
-        APIClient().getWeatherFromAPI(
-            latitude: latitude,
-            longitude: longitude, success: { description, cityName in
+        showWeatherView()
+    }
+    func showWeatherView() {
+        Task { @MainActor in
+            let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecrure)
+            do {
+                let (description, cityName) = try await APIClient().getWeatherFromAPI(latitude: latitude, longitude: longitude)
                 DispatchQueue.main.async {
                     self.weatherLabel.text = description
                     self.prefectureLabel.text = cityName
                 }
-            }, failure: {
-                print("error")
+            } catch {
+                let alert = AlertMaker().make(didTapRetry: {
+                    self.showWeatherView()
+                })
+                self.present(alert, animated: true, completion: nil)
             }
-        )
+        }
     }
 }

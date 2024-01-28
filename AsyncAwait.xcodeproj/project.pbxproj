@@ -20,6 +20,8 @@
 		536784002B649564002E602F /* PrefectureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536783FF2B649564002E602F /* PrefectureData.swift */; };
 		536784022B649971002E602F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536784012B649971002E602F /* WeatherViewController.swift */; };
 		536784042B6499FF002E602F /* WeatherView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536784032B6499FF002E602F /* WeatherView.storyboard */; };
+		5394FCD02B65C9E800739E89 /* AlertMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394FCCF2B65C9E800739E89 /* AlertMaker.swift */; };
+		5394FCD22B65DF4800739E89 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394FCD12B65DF4800739E89 /* APIClientError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		536783FF2B649564002E602F /* PrefectureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureData.swift; sourceTree = "<group>"; };
 		536784012B649971002E602F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		536784032B6499FF002E602F /* WeatherView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherView.storyboard; sourceTree = "<group>"; };
+		5394FCCF2B65C9E800739E89 /* AlertMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMaker.swift; sourceTree = "<group>"; };
+		5394FCD12B65DF4800739E89 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				535B92702B64D8C000310C03 /* WeatherData.swift */,
 				535B92742B64D99C00310C03 /* PrefectureLatLon.swift */,
 				535B92762B64DBC700310C03 /* APIClient.swift */,
+				5394FCCF2B65C9E800739E89 /* AlertMaker.swift */,
+				5394FCD12B65DF4800739E89 /* APIClientError.swift */,
 				53130F342B62917B00116262 /* Main.storyboard */,
 				536784032B6499FF002E602F /* WeatherView.storyboard */,
 				535B92722B64D8F700310C03 /* Constants.swift */,
@@ -190,7 +196,9 @@
 				536784002B649564002E602F /* PrefectureData.swift in Sources */,
 				535B92732B64D8F700310C03 /* Constants.swift in Sources */,
 				535B92712B64D8C000310C03 /* WeatherData.swift in Sources */,
+				5394FCD02B65C9E800739E89 /* AlertMaker.swift in Sources */,
 				53130F312B62917B00116262 /* SceneDelegate.swift in Sources */,
+				5394FCD22B65DF4800739E89 /* APIClientError.swift in Sources */,
 				535B92772B64DBC700310C03 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
