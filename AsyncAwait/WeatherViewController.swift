@@ -9,15 +9,15 @@ import UIKit
 
 class WeatherViewController: UIViewController {
     var prefecrure = ""
-    
+
     @IBOutlet private weak var weatherLabel: UILabel!
-    
+
     @IBOutlet private weak var prefectureLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
-    
+
     @IBAction private func tappedFetchWeatherButton(_ sender: UIButton) {
         showWeatherView()
     }
