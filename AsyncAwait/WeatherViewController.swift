@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+final class WeatherViewController: UIViewController {
     var prefecrure = ""
 
     @IBOutlet private weak var weatherLabel: UILabel!
@@ -21,7 +21,7 @@ class WeatherViewController: UIViewController {
     @IBAction private func tappedFetchWeatherButton(_ sender: UIButton) {
         showWeatherView()
     }
-    func showWeatherView() {
+    private func showWeatherView() {
         let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecrure)
         Task { @MainActor in
             do {
