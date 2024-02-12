@@ -31,7 +31,7 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let selectedPrefecture = PrefectureData().prefectureList[indexPath.row]
         let storyboard = UIStoryboard(name: "WeatherView", bundle: nil)
         let weatherVC = storyboard.instantiateViewController(withIdentifier: "WeatherView") as? WeatherViewController
-        weatherVC?.prefecrure = selectedPrefecture
+        weatherVC?.prefecture = selectedPrefecture
         // SwiftLint
         navigationController?.pushViewController(weatherVC!, animated: true)
 

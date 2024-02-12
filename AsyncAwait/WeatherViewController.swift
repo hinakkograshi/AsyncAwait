@@ -8,7 +8,7 @@
 import UIKit
 
 final class WeatherViewController: UIViewController {
-    var prefecrure = ""
+    var prefecture = ""
 
     @IBOutlet private weak var weatherLabel: UILabel!
 
@@ -22,10 +22,11 @@ final class WeatherViewController: UIViewController {
         showWeatherView()
     }
     private func showWeatherView() {
-        let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecrure)
+        let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecture)
         Task { @MainActor in
             do {
-                let (description, cityName) = try await APIClient().getWeatherFromAPI(latitude: latitude, longitude: longitude)
+                // errors処理帰ってくる
+                let (description, cityName) = try await WeatherAPIClient().getWeather(latitude: latitude, longitude: longitude)
                 self.weatherLabel.text = description
                 self.prefectureLabel.text = cityName
             } catch {
