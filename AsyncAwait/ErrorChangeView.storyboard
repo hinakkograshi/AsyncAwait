@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Error Change View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ErrorChangeView" id="Y6W-OH-hqX" customClass="ErrorChangeViewController" customModule="AsyncAwait" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYB-Mx-0kS">
+                                <rect key="frame" x="126.66666666666669" y="580" width="140" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="ij6-ku-9NC"/>
+                                    <constraint firstAttribute="height" constant="65" id="iof-Wb-l8h"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="天気を取得">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapFetchWeather:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="C3o-n1-fIi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-rA-gmB">
+                                <rect key="frame" x="161" y="310" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5g-Tw-yfj">
+                                <rect key="frame" x="161" y="401" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYB-Mx-0kS" firstAttribute="top" secondItem="G5g-Tw-yfj" secondAttribute="bottom" constant="143" id="6hf-6R-lEd"/>
+                            <constraint firstItem="sWE-rA-gmB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7sE-fE-zx5"/>
+                            <constraint firstItem="G5g-Tw-yfj" firstAttribute="top" secondItem="sWE-rA-gmB" secondAttribute="bottom" constant="55" id="Aow-Pp-qxN"/>
+                            <constraint firstItem="sWE-rA-gmB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="251" id="Pvg-CZ-Ez5"/>
+                            <constraint firstItem="G5g-Tw-yfj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="u4d-jF-c5K"/>
+                            <constraint firstItem="fYB-Mx-0kS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vAQ-ew-M3l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="prefectureLabel" destination="G5g-Tw-yfj" id="87Z-73-azR"/>
+                        <outlet property="weatherLabel" destination="sWE-rA-gmB" id="IXN-Ri-MAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

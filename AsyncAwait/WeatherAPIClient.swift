@@ -12,7 +12,7 @@ struct WeatherAPIClient {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(Constants.apiKey)"
         let url = URL(string: urlString)
         let urlRequest = URLRequest(url: url!)
-        
+
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         switch (response as? HTTPURLResponse)?.statusCode {
         case 200:

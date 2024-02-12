@@ -29,11 +29,11 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedPrefecture = PrefectureData().prefectureList[indexPath.row]
-        let storyboard = UIStoryboard(name: "WeatherView", bundle: nil)
-        let weatherVC = storyboard.instantiateViewController(withIdentifier: "WeatherView") as? WeatherViewController
-        weatherVC?.prefecture = selectedPrefecture
+        let storyboard = UIStoryboard(name: "SelectionView", bundle: nil)
+        let selectionVC = storyboard.instantiateViewController(withIdentifier: "SelectionView") as? SelectionViewController
+        selectionVC?.prefecture = selectedPrefecture
         // SwiftLint
-        navigationController?.pushViewController(weatherVC!, animated: true)
+        navigationController?.pushViewController(selectionVC!, animated: true)
 
     }
 

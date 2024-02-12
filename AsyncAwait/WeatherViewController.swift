@@ -25,7 +25,6 @@ final class WeatherViewController: UIViewController {
         let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecture)
         Task { @MainActor in
             do {
-                // errors処理帰ってくる
                 let (description, cityName) = try await WeatherAPIClient().getWeather(latitude: latitude, longitude: longitude)
                 self.weatherLabel.text = description
                 self.prefectureLabel.text = cityName
