@@ -13,14 +13,12 @@ final class WeatherViewController: UIViewController {
     @IBOutlet private weak var weatherLabel: UILabel!
 
     @IBOutlet private weak var prefectureLabel: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    }
-
-    @IBAction private func tappedFetchWeatherButton(_ sender: UIButton) {
+    // didTapFetchWeatherButtonで良さそう。
+    @IBAction private func didTapFetchWeatherButton(_ sender: UIButton) {
         showWeatherView()
     }
+
     private func showWeatherView() {
         let (latitude, longitude) = PrefectureLatLon().fetchLatLon(weatherPrefecture: prefecture)
         Task { @MainActor in

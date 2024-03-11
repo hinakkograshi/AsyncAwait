@@ -7,6 +7,10 @@
 
 import Foundation
 
+// enum APIClientError: Error {
+//    case networkError
+// }
+
 enum APIClientError: Error {
     case networkError
 }

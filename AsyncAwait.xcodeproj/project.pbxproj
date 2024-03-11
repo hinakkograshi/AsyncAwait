@@ -84,26 +84,50 @@
 			children = (
 				53130F2E2B62917B00116262 /* AppDelegate.swift */,
 				53130F302B62917B00116262 /* SceneDelegate.swift */,
-				535B92702B64D8C000310C03 /* WeatherData.swift */,
-				535B92742B64D99C00310C03 /* PrefectureLatLon.swift */,
-				535B92762B64DBC700310C03 /* WeatherAPIClient.swift */,
-				5394FCCF2B65C9E800739E89 /* AlertMaker.swift */,
-				5394FCD12B65DF4800739E89 /* APIClientError.swift */,
 				53B7130A2B6BDBC600696D0F /* Constants.swift */,
-				536783FF2B649564002E602F /* PrefectureData.swift */,
-				53130F342B62917B00116262 /* Main.storyboard */,
-				53130F322B62917B00116262 /* ViewController.swift */,
-				534961322B79F46100D40EA0 /* SelectionView.storyboard */,
-				534961342B79F59900D40EA0 /* SelectionViewController.swift */,
-				536784032B6499FF002E602F /* WeatherView.storyboard */,
-				536784012B649971002E602F /* WeatherViewController.swift */,
-				534961382B79F8DC00D40EA0 /* ErrorChangeView.storyboard */,
-				534961362B79F7F400D40EA0 /* ErrorChangeViewController.swift */,
+				5394FCCF2B65C9E800739E89 /* AlertMaker.swift */,
+				53A4C61D2B9F3A8F00E4A14D /* Model */,
+				53A4C61C2B9F3A1200E4A14D /* View */,
+				53A4C61E2B9F3B2400E4A14D /* Controller */,
 				53130F372B62917C00116262 /* Assets.xcassets */,
 				53130F392B62917C00116262 /* LaunchScreen.storyboard */,
 				53130F3C2B62917C00116262 /* Info.plist */,
 			);
 			path = AsyncAwait;
+			sourceTree = "<group>";
+		};
+		53A4C61C2B9F3A1200E4A14D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53130F342B62917B00116262 /* Main.storyboard */,
+				534961322B79F46100D40EA0 /* SelectionView.storyboard */,
+				536784032B6499FF002E602F /* WeatherView.storyboard */,
+				534961382B79F8DC00D40EA0 /* ErrorChangeView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53A4C61D2B9F3A8F00E4A14D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				535B92742B64D99C00310C03 /* PrefectureLatLon.swift */,
+				535B92702B64D8C000310C03 /* WeatherData.swift */,
+				535B92762B64DBC700310C03 /* WeatherAPIClient.swift */,
+				5394FCD12B65DF4800739E89 /* APIClientError.swift */,
+				536783FF2B649564002E602F /* PrefectureData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53A4C61E2B9F3B2400E4A14D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53130F322B62917B00116262 /* ViewController.swift */,
+				534961342B79F59900D40EA0 /* SelectionViewController.swift */,
+				536784012B649971002E602F /* WeatherViewController.swift */,
+				534961362B79F7F400D40EA0 /* ErrorChangeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
